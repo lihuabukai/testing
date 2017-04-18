@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //创建一个红色的视图
+    UIView *redView = [UIView new];
+    redView.backgroundColor = [UIColor redColor];
+    redView.frame = CGRectMake(0, 20, 100, 80);
+    [self.view addSubview:self.view];
+    
+    
 }
 
 
